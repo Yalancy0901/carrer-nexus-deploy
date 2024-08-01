@@ -1,0 +1,73 @@
+/* Base Styles */
+.post {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.post h2 {
+  color: #CF9FFF;
+}
+
+.post-media {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .post {
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .post h2 {
+    font-size: 20px;
+  }
+
+  .post-media {
+    max-height: 450px;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+  .post {
+    padding: 30px;
+    margin: 40px auto;
+  }
+
+  .post h2 {
+    font-size: 24px;
+  }
+
+  .post-media {
+    max-height: 500px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .post {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  .post h2 {
+    font-size: 18px;
+  }
+
+  .post-media {
+    max-height: 300px;
+  }
+}

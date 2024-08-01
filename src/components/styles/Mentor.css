@@ -1,0 +1,142 @@
+.mentor {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+/* Mentor Picture */
+.mentor-pic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Mentor Info */
+.mentor-info {
+  flex: 1;
+}
+
+.mentor-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mentor-info p {
+  margin: 4px 0;
+  color: #888;
+}
+
+.mentor-info span {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #CF9FFF;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Mentor Button */
+.mentor-btn {
+  background-color: #CF9FFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.mentor-btn:hover {
+  background-color: #a78bcf;
+}
+
+/* Responsive Design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .mentor {
+    flex-direction: row; /* Horizontal layout */
+    padding: 20px;
+  }
+
+  .mentor-pic {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .mentor-info h3 {
+    font-size: 18px;
+  }
+
+  .mentor-info p {
+    font-size: 14px;
+  }
+
+  .mentor-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+  .mentor {
+    padding: 20px;
+  }
+
+  .mentor-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mentor-info h3 {
+    font-size: 20px;
+  }
+
+  .mentor-info p {
+    font-size: 16px;
+  }
+
+  .mentor-btn {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .mentor {
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .mentor-pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .mentor-info h3 {
+    font-size: 14px;
+  }
+
+  .mentor-info p {
+    font-size: 12px;
+  }
+
+  .mentor-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

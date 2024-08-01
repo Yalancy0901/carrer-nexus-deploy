@@ -1,0 +1,265 @@
+.main-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Post Container */
+.post-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Post Input */
+.post-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* File Input */
+.file-input {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Share Button */
+.share-button {
+  background-color: #a55cff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+  background-color: #8c4df4;
+}
+
+/* Post Options */
+.post-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Option Button */
+.option-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.option-button:hover {
+  opacity: 0.7;
+}
+
+.option-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Posts List */
+.posts-list {
+  margin-top: 20px;
+}
+
+/* Post Content */
+.post-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Post Info */
+.post-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Profile Pic */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Post Details */
+.post-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-email {
+  font-weight: bold;
+  color: #333;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Post Text */
+.post-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Post Video */
+.post-video {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Action Button */
+.action-button {
+  background: none;
+  border: none;
+  color: #a55cff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.action-button:hover {
+  color: #8c4df4;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 10px;
+}
+
+/* Comment */
+.comment {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.comment span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .post-input {
+    font-size: 18px;
+  }
+
+  .share-button {
+    font-size: 18px;
+  }
+
+  .post-content {
+    padding: 20px;
+  }
+
+  .post-info {
+    flex-direction: row;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .post-text {
+    font-size: 18px;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+  .post-container {
+    padding: 20px;
+  }
+
+  .post-info {
+    margin-bottom: 15px;
+  }
+
+  .post-content {
+    padding: 25px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .post-input {
+    font-size: 14px;
+  }
+
+  .share-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .post-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+  }
+
+  .post-text {
+    font-size: 14px;
+  }
+
+  .post-image,
+  .post-video {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .comment {
+    padding: 5px 0;
+  }
+
+  .comment span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,85 @@
+/* Base Styles */
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background: #ffffff;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+}
+
+.friend-suggestions, .profile-activity, .upcoming-events {
+  margin-bottom: 20px;
+}
+
+.friend-suggestions h3, .profile-activity h3, .upcoming-events h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #a55cff;
+}
+
+.friend-suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.friend-suggestions ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.friend-suggestions ul li:hover {
+  background-color: #a55cff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.profile-activity, .upcoming-events {
+  color: #888;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .right-sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .friend-suggestions h3, .profile-activity h3, .upcoming-events h3 {
+    font-size: 14px;
+  }
+
+  .friend-suggestions ul li {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .right-sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+  }
+
+  .friend-suggestions, .profile-activity, .upcoming-events {
+    margin-bottom: 15px;
+  }
+
+  .friend-suggestions h3, .profile-activity h3, .upcoming-events h3 {
+    font-size: 12px;
+  }
+
+  .friend-suggestions ul li {
+    font-size: 10px;
+    padding: 6px 0;
+  }
+}

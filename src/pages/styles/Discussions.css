@@ -1,0 +1,85 @@
+.discussions-page {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .discussions-page {
+    padding: 40px;
+  }
+  
+  .discussion {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .discussion h3 {
+    font-size: 20px;
+  }
+
+  .discussion p {
+    font-size: 16px;
+  }
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1023px) {
+  .discussions-page {
+    padding: 20px;
+  }
+
+  .discussion {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .discussion h3 {
+    font-size: 18px;
+  }
+
+  .discussion p {
+    font-size: 14px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .discussions-page {
+    padding: 15px;
+  }
+
+  .discussion {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .discussion h3 {
+    font-size: 16px;
+  }
+
+  .discussion p {
+    font-size: 14px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .discussions-page {
+    padding: 10px;
+  }
+
+  .discussion {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .discussion h3 {
+    font-size: 14px;
+  }
+
+  .discussion p {
+    font-size: 12px;
+  }
+}

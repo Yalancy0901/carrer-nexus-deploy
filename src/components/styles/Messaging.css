@@ -1,0 +1,73 @@
+.messages-page {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .message {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+
+  .message h3 {
+    font-size: 18px;
+  }
+
+  .message p {
+    font-size: 16px;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+  .message {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .message h3 {
+    font-size: 20px;
+  }
+
+  .message p {
+    font-size: 18px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .messages-page {
+    padding: 15px;
+  }
+
+  .message {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .message h3 {
+    font-size: 14px;
+  }
+
+  .message p {
+    font-size: 12px;
+  }
+}
